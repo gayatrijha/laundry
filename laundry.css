@@ -1,0 +1,31 @@
+.navButton {
+  background-color: aqua !important;
+  border-radius: 20px !important;
+}
+
+.fs-7 {
+  font-size: 13px;
+}
+
+.content {
+  background-image: url("./laundry.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.95;
+}
+
+form div label {
+  color: white;
+}
+
+.fab:hover {
+  color: aliceblue;
+}
+
+footer {
+  background-color: rgb(70, 60, 60);
+}
+
+footer div div ul li:hover {
+  color: black;
+}

@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      /* FontAwesome for working BootSnippet :> */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background:rgba(128, 157, 209, 0.7) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+    </style>
+  </head>
+  <body>
+    <section id="team" class="pb-5">
+      <div class="container">
+          <h5 class="section-title h1">OUR SERVICES</h5>
+          <div class="row">
+              <!-- car -->
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" >
+                      <div class="mainflip flip-0">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <p></p><img class=" img-fluid" src="https://closelocation.com/assets/img/car-wash.jpg" alt="card image"></p>
+                                      <h4 class="card-title">Car Clining</h4>
+                                      <p class="card-text">Give your car a deserved spa.</p>
+                                      <a href="" class="btn btn-primary btn-sm">know more</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h4 class="card-title">Car Clining</h4>
+                                      <p class="card-text">Many times, your car acts like an alternate to home as you eat, get ready, take a nap or party inside and so it demands equal attention to stay clean. Let us take care of yours.</p>
+                                      
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- dry clining -->
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <p><img class=" img-fluid" src="https://thumbs.dreamstime.com/b/rack-clean-clothes-hangers-dry-cleaning-indoors-rack-clean-clothes-hangers-dry-cleaning-114659327.jpg" alt="card image"></p>
+                                      <h4 class="card-title">Dry Cleaning</h4>
+                                      <p class="card-text">Gentle wash for your daily wear.</p>
+                                      <a href="" class="btn btn-primary btn-sm">know more</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h4 class="card-title">Dry Clining</h4>
+                                      <p class="card-text">Looking for a dry cleaning service provider? Look no further. TLH is the one-stop-shop for all your dry cleaning needs that provides the best services at the most competitive rates.</p>
+                                   
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+   
+              <!-- curtain -->
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <p><img class=" img-fluid" src="https://carpetcleaningkings.com.au/wp-content/uploads/2018/01/steam-cleaning-curtains-300x223-1.jpg" alt="card image"></p>
+                                      <h4 class="card-title">Curtain Cleaning</h4>
+                                      <p class="card-text">Because Drapes deserve gentle care</p>
+                                      <a href="" class="btn btn-primary btn-sm">know more</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h4 class="card-title">Curtain Clining</h4>
+                                      <p class="card-text">Don’t avoid stains on curtains by tying them or removing them to leave a void on windows. Let us take care of them professionally so you can always feel that refreshing shine inside your home.</p>
+                                   
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+       
+              <!-- premium dry -->
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <p><img class=" img-fluid" src="https://5.imimg.com/data5/HQ/LJ/GLADMIN-8339809/premium-laundry-500x500.png" alt="card image"></p>
+                                      <h4 class="card-title">Premium Laundry</h4>
+                                      <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                      <a href="" class="btn btn-primary btn-sm">know more</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h4 class="card-title">Premium Dry</h4>
+                                      <p class="card-text">Never pack your unclean clothes again and regret later, instead, keep them occasion ready always as you avail our best laundry services at the best price in the market.</p>
+                                   
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+           
+              <!-- shoe clean -->
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <p><img class=" img-fluid" src="download.jfif" alt="card image"></p>
+                                      <h4 class="card-title">Shoe Clining</h4>
+                                      <p class="card-text">Make your footware brand as new.</p>
+                                      <a href="" class="btn btn-primary btn-sm">know more</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h4 class="card-title">Shoe Clining</h4>
+                                      <p class="card-text">Trust us with the most professional & best shoe care services because we know what it takes to pamper your expensive shoes and restore them in their original glory.</p>
+                                     
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- carpet -->
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <p><img class=" img-fluid" src="carpet.jfif" alt="card image"></p>
+                                      <h4 class="card-title">Carpet Clining</h4>
+                                      <p class="card-text">Tough on rust gentle on rug</p>
+                                      <a href="" class="btn btn-primary btn-sm">know more</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h4 class="card-title">Carpet Clining</h4>
+                                      <p class="card-text">
+                                        Your kids deserve a dirt-free and refreshingly clean indoor garden to play. Trust us with the best carpet cleaning that includes Carpet Washing and Carpet Sanitization right at your doorstep.</p>
+                                   
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- bag -->
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                  <p><img class=" img-fluid" src='https://cdn.shopify.com/s/files/1/0003/2725/4068/files/how-to-clean-a-leather-purse-buffalo-jackson-_3-of-3.jpg?16200901748990938056' alt="card image"></p>
+
+                                    <h4 class="card-title">Bag Cleaning</h4>
+                                    <p class="card-text">
+                                      Sanatized and stain free bags.</p>
+                                    <a href="" class="btn btn-primary btn-sm">know more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Bag Clining</h4>
+                                    <p class="card-text">Just like shoes, bags command a lot of favoritism in our wardrobes. Leave them to our bag cleaning expert team and keep your favorite bags looking like new forever!</p>
+                                    <!-- <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- sofa -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                  <div class="mainflip">
+                      <div class="frontside">
+                          <div class="card">
+                              <div class="card-body text-center">
+                                  <p><img class=" img-fluid" src='https://www.thefutureperfect.com/wp-content/uploads/2018/07/w3b-Tepee-three-seat-sofa-3-1600x1133.jpg' alt="card image"></p>
+                                  <h4 class="card-title">Sofa Cleaning</h4>
+                                  <p class="card-text">
+                                    For a germ-free lounging experience</p>
+                                  <a href="" class="btn btn-primary btn-sm">know more</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="backside">
+                          <div class="card">
+                              <div class="card-body text-center mt-4">
+                                  <h4 class="card-title">Sofa Cleaning</h4>
+                                  <p class="card-text">A sofa adds life to your living room and it's necessary to keep it clean and shining. Get our expert cleaning team on the job to renew your upholstery within no time.</p>
+                                 
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>
+  </section>
+  
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

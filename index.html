@@ -1,0 +1,771 @@
+<html>
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="videoparallax.css" /> -->
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+
+    </head>
+<body>
+  <!-- <nav class="topnav fixed-top" id="myTopnav">
+    <a href="#home"><img class="logo" src="https://i.pinimg.com/originals/e1/ac/52/e1ac5238c90aa1387391d0ceda5b65c9.png" alt="Smiley face"></a>
+    <div class="navlist" id="navlist">
+        <a class="cursor0" href="#home">&nbsp</a>
+        <a class="navoption active" href="#home" >About </a>
+        <a class="navoption" href="service.html">Services</a>
+        <a class="navoption" href="#lab_pricing_table">Pricing</a>
+        <a class="navoption" href="#about">Stores</a>
+        <a class="navoption" href="#about">Offers</a>
+        <a href="javascript:void(0);" class="icon" id="hamburger">
+            <i class="fa fa-bars"></i>
+        </a>
+      
+    </div>
+  </nav> -->
+
+    <!-- <div class="navoption subscribe-wrapper subscribe2-wrapper">
+          <div class="subscribe-form">
+            <form action="book.html">
+             <a class='navoption' href=""><button >book a service <i class="fas fa-long-arrow-alt-right"></i></button></a> 
+            </form>
+          </div>
+        </div> -->
+  
+        <div class="nav">
+          <input type="checkbox" id="nav-check">
+          <div class="nav-header">
+            <div class="nav-title">
+              JoGeek
+            </div>
+          </div>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          
+          <div class="nav-links">
+            <a href="//github.io/jo_geek" target="_blank">Github</a>
+            <a href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
+            <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
+            <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
+            <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
+          </div>
+        </div>
+
+
+  <!-- <main class="wrapper">
+    <section class="section parallax bg1">
+      <h1>head</hi>
+    </section>
+    <section class="section static">
+      <h1>Boring</h1>
+    </section>
+    <section class="section parallax bg2">
+      <h1>foot</hi>
+    </section>
+  </main> -->
+  
+  
+<div class=" ParallaxVideo" style="overflow-x: hidden;">
+    <video autoplay muted loop>
+        <source src="vedio.mp4" type="video/ogg">
+    </video>
+
+    <div class="row" >
+      <div class="col-sm-4">
+        <div class="containertitle">
+          <h3>Welcome to one of Nepal's Finest</h3>
+        </div>
+      
+          <div class="containertitle">
+              <h1><b>Dry-Clining</b></h2>    
+          </div>
+          <div class="containertitle">
+              <h3>Services</h3>
+          </div>
+      </div>
+
+     <div class='col-sm-8'>
+       <!-- <div class="container contact-form">
+        <div class="contact-image">
+            <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+        </div>
+        <form method="post">
+            <h3>Schedule a Pickup</h3>
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Send" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+      </div>  -->
+     
+    <div class="row ">
+        <div class="col-lg-7 mx-auto">
+            <div class="card8  mx-auto p-4 bg-light">
+                <div class="card-body bg-light">
+                    <div class="container">
+                      <div class="container"><div class=" text-center ">
+                        <h1>Schedule a Pickup</h1>
+                    </div>
+                        <form id="contact-form" role="form">
+                            <div class="controls">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group"> <label for="form_name">Full Name *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required."> </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group"> <label for="address">Address *</label> <input id="form_address" type="text" name="address" class="form-control" placeholder="Address *" required="required" data-error="Address is required."> </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required."> </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group"> <label for="form_need">Service*</label> <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your service.">
+                                                <option value="" selected disabled>--Select Service--</option>
+                                                <option>Laundry</option>
+                                                <option>Dry Clean</option>
+                                                <option>Carpet Clining</option>
+                                                <option>Other</option>
+                                            </select> </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group"> <label for="form_message">Pick up Date *</label> <input id="form_address" type="date" name="address" class="form-control" placeholder="Address *" required="required" data-error="Address is required."> </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group"> <label for="form_message">Delivery *</label><input id="form_address" type="date" name="address" class="form-control" placeholder="Address *" required="required" data-error="Address is required."> </div>
+                                  </div>
+                                    <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " value="Send Message"> </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> <!-- /.8 -->
+        </div> <!-- /.row-->
+    </div>
+</div>
+    </div> 
+    
+    
+   
+    <!-- <div class="col-sm-6 px-5">
+      <div class="subscribe-wrapper subscribe2-wrapper mb-15">
+        <div class="subscribe-form">
+          <form action="book.html">
+           <a href=""><button >book a service <i class="fas fa-long-arrow-alt-right"></i></button></a> 
+          </form>
+        </div>
+      </div>
+    </div> -->
+      
+</div> 
+
+
+
+
+
+<div class="ParallaxVideo">
+    <video autoplay muted loop>
+        <source src="vedio.mp4" type="video/ogg">
+    </video>
+   
+ 
+
+
+</div>
+
+<div class="heading">
+  <h1 class="heading__title white">Services</h1>
+
+</div>
+<div id="service" class="carousel slide py-5" data-bs-ride="carousel"   data-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class='row'>
+        <div class="col-sm-4">
+          <div class="card card-1">
+      
+            <h2 class="card__title">Dry Clining</h2>
+            <h6 class="heading__title white py-4">Gentle wash for your daily wear.</h6>
+
+            <p class="card__apply">
+           
+              <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card card-3">
+     
+            <h2 class="card__title">Carpet Clining</h2>
+            <h6 class="heading__title white py-4">Tough on rust gentle on rug</h6>
+
+            <p class="card__apply">
+              <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card card-4">
+            <h2 class="card__title">Car Cleaning</h2>
+            <h6 class="heading__title white py-4">Give your car a deserved spa.</h6>
+
+            <p class="card__apply">
+              <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+      <div class='row'>
+        <div class='col-sm-4'>
+          <div class="card card-2">
+     
+            <h2 class="card__title"> Sofa Cleaning</h2>
+            <h6 class="heading__title white py-4">For a gem lounging experience.</h6>
+
+            <p class="card__apply">
+              <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+            </p>
+          </div>
+        </div>
+
+        <div class='col-sm-4'>
+          <div class="card card-4">
+            <h2 class="card__title">Bag Cleaning</h2>
+            <h6 class="heading__title white py-4">Sanatized and stain free bags.</h6>
+
+            <p class="card__apply">
+              <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+            </p>
+          </div>
+        </div>
+
+        <div class='col-sm-4'>
+          <div class="card card-2">
+     
+            <h2 class="card__title"> Shoe Cleaning</h2>
+            <h6 class="heading__title white py-4">Make your footware brand as new.</h6>
+
+            <p class="card__apply">
+              <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+     
+    </div>
+
+
+  </div>
+</div>
+
+<!-- services -->
+
+
+<!-- <div class="main-container py-5" id="service" >
+  <div class="heading">
+    <h1 class="heading__title " style="color: white;" >Services</h1>
+    <p class="heading__credits"><a class="heading__link" target="_blank" href="">The mastery of our highly skilled staff, in conjunction with our state-of-the-art and eco-friendly dry cleaning processes, culminate in a service that is simply unrivalled.</a></p>
+ 
+  </div>
+  <div class="cards">
+    <div class="card card-1">
+      
+      <h2 class="card__title">Dry Clining</h2>
+   
+      <p class="card__apply">
+        <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+    <div class="card card-2">
+     
+      <h2 class="card__title"> Sofa Cleaning</h2>
+      <p class="card__apply">
+        <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+    <div class="card card-3">
+     
+      <h2 class="card__title">Carpet Clining</h2>
+      <p class="card__apply">
+        <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+    <div class="card card-4">
+      <h2 class="card__title">Car Cleaning</h2>
+
+      <p class="card__apply">
+        <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+    <div class="card card-4">
+      <h2 class="card__title">Bag Cleaning</h2>
+      <p class="card__apply">
+        <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+    <div class="card card-4">
+      <h2 class="card__title">Premium Dry</h2>
+
+      <p class="card__apply">
+        <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+    <div class="card card-4">
+      <h2 class="card__title">Shoe Clining</h2>
+      <p class="card__apply">
+        <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+    <div class="card card-4">
+      <h2 class="card__title">Carpet Clining</h2>
+      <p class="card__apply">
+        <a class="card__link" href="#">Know more <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+ 
+  </div>
+</div> -->
+
+
+<!-- advantage -->
+<section>
+  <div class="container py-5">
+
+    <header class="text-center mb-5 text-white">
+      <div class="row">
+        <div class="col-lg-7 mx-auto">
+          <h1>Advantages</h1>
+        </div>
+      </div>
+    </header>
+    <!-- END -->
+
+
+
+    <div class="row text-center align-items-end">
+    
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="bg-white p-5 rounded-lg shadow">
+          <h1 class="h6 text-uppercase font-weight-bold mb-4">Eco Friendly</h1>
+          <h2 class="h1 font-weight-bold"><img src="" alt="" class="pricing-img"><i class="fas fa-leaf " ></i></span></h2>
+
+          <!-- <div class="custom-separator my-4 mx-auto bg-primary"></div> -->
+
+          <ul class="list-unstyled my-5 text-small text-left">
+            <li class="mb-3">
+              <i class=" mr-2 text-primary"></i> We care for clothes as well as nature and so, we adhere to all environmental standards and use water-based-eco-friendly products that are free from any harmful chemicals as well as pollutants.</li>
+         
+          </ul>
+          <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">Know more</a>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="bg-white p-5 rounded-lg shadow">
+          <h1 class="h6 text-uppercase font-weight-bold mb-4">ADDED Convenience</h1>
+          <h2 class="h1 font-weight-bold"><img src="" alt="" class="pricing-img"><i class="fas fa-truck" ></i></span></h2>
+
+
+          <!-- <div class="custom-separator my-4 mx-auto bg-primary"></div> -->
+
+          <ul class="list-unstyled my-5 text-small text-left">
+            <li class="mb-3">
+              <i class=" mr-2 text-primary"></i>Every day busy life hardly leaves you with any free time for yourself. We understand the value of your time and hence we offer free pick-up and drop services at absolutely no extra charge.</li>
+         
+          </ul>
+          <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">Know more</a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="bg-white p-5 rounded-lg shadow">
+          <h1 class="h6 text-uppercase font-weight-bold mb-4">Delicate</h1>
+          <h2 class="h1 font-weight-bold"><img src="" alt="" class="pricing-img"><i class="fas fa-feather " ></i></span></h2>
+
+          <!-- <div class="custom-separator my-4 mx-auto bg-primary"></div> -->
+
+          <ul class="list-unstyled my-5 text-small text-left">
+            <li class="mb-3">
+              <i class=" mr-2 text-primary"></i>Clothes are scared of being muscled up with harsh detergents at dhobi ghaat. So, we only use chemicals that gentle on your clothes to extend their life and keep them new for a longer period.</li>
+         
+          </ul>
+          <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">Know more</a>
+        </div>
+      </div>
+   
+
+    </div>
+  </div>
+</section>
+<!-- <div class='container-fluid' style="overflow-x: hidden;"> 
+  <div class="background">
+    <div class="heading">
+      <h1 class="heading__title white">Advantages</h1>
+   
+    </div>
+    <div class="containeradd">
+      <div class="panel pricing-table">
+        
+        <div class="pricing-plan">
+          <img src="" alt="" class="pricing-img"><i class="fas fa-leaf fa-2x white" ></i>
+          <h2 class="card__title">eco-friendly</h2>
+          <ul class="pricing-features">
+            <p class="pricing-features-item white">We care for clothes as well as nature and so, we adhere to all environmental standards and use water-based-eco-friendly products that are free from any harmful chemicals as well as pollutants.Sleeps after 30 mins of inactivity</p>
+          </ul>
+          <a href="" class="btn btn-primary btn-sm">know more</a>
+        </div>
+        
+        <div class="pricing-plan">
+          <img src="" alt="" class="pricing-img"> <i class="fas fa-wallet fa-2x white" ></i>
+          <h2 class="card__title">Great Saving</h2>
+          <ul class="pricing-features">
+            <p class="pricing-features-item white">We are committed to organizing laundry and dry-clean industry by providing high-quality services and effective savings on your regular laundry expenses with the help of our professional experts.</p>
+          </ul>
+          <a href="" class="btn btn-primary btn-sm">know more</a>
+
+        </div>
+        <div class="pricing-plan">
+          <img src="" alt="" class="pricing-img"> <i class="fas fa-feather fa-2x white"></i>
+          <h2 class="card__title">Delicate Care</h2> 
+          <ul class="pricing-features">
+            <p class="pricing-features-item white">Clothes are scared of being muscled up with harsh detergents at dhobi ghaat. So, we only use chemicals that gentle on your clothes to extend their life and keep them new for a longer period.</p>
+          </ul>
+          <a href="" class="btn btn-primary btn-sm">know more</a>
+
+        </div>
+        
+        <div class="pricing-plan">
+          <img src="" alt="" class="pricing-img"> <i class="fas fa-truck fa-2x white"></i>
+          <h2 class="card__title">Added Convenience</h2>
+          <ul class="pricing-features">
+            <p class="pricing-features-item white">Every day busy life hardly leaves you with any free time for yourself. We understand the value of your time and hence we offer free pick-up and drop services at absolutely no extra charge.</p>
+          </ul>
+          <a href="" class="btn btn-primary btn-sm">know more</a>
+
+        </div>
+  
+       
+        
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- testiminal -->
+
+
+<section class="section-medium  section-arrow-primary-color bg-primary">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 text-white text-center">
+              <h2 class="section-title "> What Our Client Say About Us</h2>
+              <p class="section-sub-title">
+                Our customers love us! Read what they have to say below.
+               
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+<div class="testimonials-clean">
+  <div class="container">
+      <!-- <div class="intro">
+          <h2 class="text-center"> Our Clients </h2>
+          <p class="text-center">Our customers love us! Read what they have to say below.</p>
+      </div> -->
+      <div class="row people">
+          <div class="col-md-6 col-lg-4 item">
+              <div class="box">
+                  <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+              </div>
+              <div class="author ">
+                  <h5 class="name">Ben Johnson</h5>
+                  <p class="title ">CEO of Company Inc.</p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+              <div class="box">
+                  <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id.</p>
+              </div>
+              <div class="author ">
+                  <h5 class="name">Carl Kent</h5>
+                  <p class="title">Founder of Style Co.</p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+                <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id.</p>
+            </div>
+            <div class="author">
+                <h5 class="name">Carl Kent</h5>
+                <p class="title">Founder of Style Co.</p>
+            </div>
+        </div>
+      </div>
+  </div>
+</div> 
+
+
+
+<!-- newsletter -->
+<section class="subscribe-area pb-50 pt-70">
+  <div class="container">
+    <div class="row">
+  
+            <div class="col-md-4">
+              <div class="subscribe-text mb-15">
+                <span>JOIN OUR NEWSLETTER</span>
+                <h2>subscribe newsletter</h2>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="subscribe-wrapper subscribe2-wrapper mb-15">
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input  class='white'placeholder="enter your email address" type="email">
+                   <a href=""><button >subscribe <i class="fas fa-long-arrow-alt-right"></i></button></a> 
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  </div>
+</section>
+
+<!-- membership -->
+<!-- <div class="container-fluid">
+  <div class="card card-body bg-light" style="opacity:0.7;min-height: 50px; ">
+    <div class=row>
+      <div class='col-sm-6'>
+        <div class='row'>
+         <div class='col-md-4'> 
+          <h6>INDIVIDUAL SERVICES</h6>
+         </div>
+         <div class='col-sm-4 px-5'> 
+           <h1><i class="fas fa-user  "></i></h1>
+         </div>
+         <div class='col-sm-4'> 
+         <a>KNOW MORE <i class="fas fa-angle-double-right "></i></a> 
+         </div>
+        
+        </div>
+      </div>
+      
+      <div class='col-sm-6 '>
+        <div class='row'>
+         <div class='col-md-4'> 
+          <h6>MEMBERSHIP SERVICES</h6>
+         </div>
+         <div class='col-sm-4 px-5'> 
+           <h1><i class="fas fa-users  "></i></h1>
+         </div>
+         <div class='col-sm-4'> 
+         <a>KNOW MORE <i class="fas fa-angle-double-right "></i></a> 
+         </div>
+        
+        </div>
+      </div>
+    </div>
+</div>
+
+</div> -->
+
+<section id="lab_pricing_table" class="py-3">
+  <div class="container">
+    <div class="row">
+      <div class="pricing-tables attached">
+        <div class="row">
+          <div class="col-sm-4 col-md-4">
+            <div class="plan first">
+              <div class="head">
+                <h2>Wash & Fold</h2>
+              </div>
+              <ul class="item-list">
+                <li><strong>20</strong> Clothes</li>
+                <li>
+                  <strong>15</strong> shirts</li>
+                <li><strong>5</strong> pants </li>
+                <li><strong>1 </strong> bedsheet</li>
+              </ul>
+              <div class="price">
+                <h3><span class="symbol">₹</span>19</h3>
+                <h4>per month</h4>
+              </div>
+              <button type="button" class="btn btn-success">Order Now</button>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 ">
+            <div class="plan recommended">
+              <div class="head">
+                <h2> Laundry </h2>
+              </div>
+              <ul class="item-list">
+                <li><strong>50</strong> Clothes</li>
+                <li><strong>25</strong> Shirts</li>
+                <li><strong>15</strong> Bed Sheets</li>
+                <li><strong>9</strong> Shoe/ Bags</li>
+              </ul>
+              <div class="price">
+                <h3><span class="symbol">₹</span>29</h3>
+                <h4>per month</h4>
+              </div>
+              <button type="button" class="btn btn-success">Order Now</button>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4  ">
+            <div class="plan last">
+              <div class="head">
+                <h2>Pick up & Deliver </h2>
+              </div>
+              <ul class="item-list">
+                <li><strong>100 </strong>Clothes</li>
+                <li><strong>50 </strong>Shirt/ Pants</li>
+                <li><strong>25</strong> Bed Sheet</li>
+                <li><strong>1</strong> Shoe/ Bags</li>
+              </ul>
+              <div class="price">
+                <h3><span class="symbol">₹</span>49</h3>
+                <h4>per month</h4>
+              </div>
+              <button type="button" class="btn btn-success">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- end .row -->
+      </div>
+      <!-- end .pricing-tables -->
+    </div>
+  </div>
+</section>
+
+<!-- freedelivery -->
+<div class="card-container">
+  <div class="card8 u-clearfix">
+    <div class="card-bodyadd">
+      <!-- <span class="card-number card-circle subtle">01</span>
+      <span class="card-author subtle">John Smith</span> -->
+      <h2 class="card-title"> Free Collection & Delivery</h2>
+      <span class="card-description subtle">
+        It is our goal to offer you the best possible laundry and dry cleaning service available</span>
+      <div class="card-read">1 (800) 765-43-21</div>
+  
+    </div>
+    <img src="https://smartdata.tonytemplates.com/laundry-v2/demo2/wp-content/uploads/sites/2/2020/11/promo-img-01.png" alt="" class="card-media" />
+  </div>
+  <div class="card-shadow"></div>
+</div>
+<!-- map -->
+
+<section>
+  <!--Google map-->
+<div id="map-container-google-1" class="z-depth-1-half map-container py-3" style="height: 400px;">
+<iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+ style="border:0" allowfullscreen></iframe>
+</div>
+ </section>
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <div class="firstfoot">
+                    <h4>Services</h4>
+                    <p> Dry Clining</p>
+                    <p> Sofa Clining</p>
+                    <p> Bag Clining</p>
+                    <p> Carpet Clining</p>
+                    <p> Curtain Clining</p>
+                    <p> Shoe Clining</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="firstfoot">
+                    <h4>Regions</h4>
+                    <p> Kathmandu</p>
+                    <p> Lalitpur</p>
+                    <p> Bhaktapur</p>
+                    <p> Jawalakhel</p>
+                    <p> Koteshwor</p>
+                    <p> Pokhara</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="firstfoot">
+                    <h4>Company</h4>
+                    <p> Blog </p>
+                    <p> Career</p>
+                    <p>About Us</p>
+                    <p> Privacy Policy</p>
+                    <p> Our Team</p>
+                 
+                </div>
+            </div>
+          </div>
+    </div> 
+
+          
+      
+ 
+    <div class="container-fluid containerfoot">
+        <div class="row">
+              <div class="line"></div>
+               
+
+                <div class="second2">
+                    <a href="" target="_blank"> <i class="fab fa-facebook fa-2x margin"></i></a>
+                    <a href="" target="_blank"> <i class="fab fa-instagram fa-2x margin"></i></a>
+                    <a href="" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
+                    <a href="" target="_blank"><i class="fab fa-twitter fa-2x margin"></i></a> 
+                </div>
+        </div>
+  </div>
+     
+</div>
+
+<!-- <script     src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</body>
+</html>
