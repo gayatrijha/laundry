@@ -154,8 +154,9 @@ nav {
 }
 /* title */
 .containertitle {
-  display: flex;
+  /* display: flex; */
   padding-left: 70px;
+  white-space: nowrap;
   justify-content: flex-start;
   color: aliceblue;
 }
